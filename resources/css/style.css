@@ -121,16 +121,6 @@ li {
     align-items: center;
 }
 
-@media only screen and (max-width: 480px) {
-    .smartphone {
-        display: unset;
-    }
-
-    div.widescreen {
-        display: none;
-    }
-}
-
 /* Start Section */
 
 
@@ -187,35 +177,6 @@ li {
     color: rgb(255, 255, 255);
 }
 
-@media only screen and (max-width: 480px) {
-
-    #start {
-        flex-direction: column;
-    }
-
-    .start-img {
-        max-width: 100%;
-        padding: 0px 0px 32px 0px;
-        box-sizing: border-box;
-    }
-
-    .start-text {
-        font-size: 0.8rem;
-        max-width: 100%;
-        box-sizing: border-box;
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-
-    .start-text a {
-        margin-bottom: 2rem;
-        max-width: 100%;
-        text-align: center;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-}
 
 /* News Section */
 
@@ -425,4 +386,122 @@ footer nav {
     float: right;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .smartphone {
+        display: unset;
+    }
+
+    .widescreen, div.widescreen {
+        display: none;
+    }
+
+    #start {
+        flex-direction: column;
+    }
+
+    .start-img {
+        max-width: 100%;
+        padding: 0px 0px 32px 0px;
+        box-sizing: border-box;
+    }
+
+    .start-text {
+        font-size: 0.8rem;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .start-text a {
+        margin-bottom: 2rem;
+        max-width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* News Section */
+
+    .newsfeed {
+        max-width: 100%;
+        padding-top: 0;
+    }
+
+    .news .image {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .news {
+        flex-direction: column;
+    }
+
+    .lecture {
+        background-color: white;
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+
+    .news .description {
+        padding: 0.5rem 1rem 3rem 1rem;
+        margin-left: 2rem;
+        align-self: flex-start;
+    }
+
+    .description p {
+        padding-top: 1rem;
+    }
+
+    /* Courses Section */
+
+    #courses {
+        background-color: white;
+        padding-top: 1.5rem;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        
+    }
+
+    .courses-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .description h5 {
+        margin-bottom: 0;
+    }
+
+    .course .description {
+        padding: 2rem;
+    }
+
+    .course {
+        max-width: 100%;
+        background-color: rgb(230, 230, 230);
+        margin: 0.25rem 1rem;
+    }
+
+    /* Exhibits Section */
+
+    #exhibits {
+        border-bottom: none;
+    }
+
+    .video-container {
+        max-width: 100%;
+        margin: 1.5rem 0 0 0;
+    }
+
+    .video-container h5, .video-container p {
+        display: none;
+    }
+
+    footer nav {
+        visibility: hidden;
+    }
 }
